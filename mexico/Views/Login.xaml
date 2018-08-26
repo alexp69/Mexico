@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="mexico.Views.Login"
+    xmlns:Controls="clr-namespace:mexico.Controls;assembly=mexico"
+
+    >
+
+    
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="CenterAndExpand"
+            Margin="50,0,50,0"
+            >
+            <Image Source="ImagenLogo.jpg"
+            HeightRequest="200"
+                   WidthRequest="200"
+                   Margin="40"
+                   />
+
+                        <Controls:CustomEntry 
+                            Image="user" 
+                            Placeholder="Usuario" 
+                            LineColor = "#F7CC8B"
+                            BorderSize = "2"
+                        />
+                        <Controls:CustomEntry 
+                            Image="key" 
+                            Placeholder="Contraseña" 
+                            IsPassword="true"
+                            LineColor = "#F7CC8B"
+                            BorderSize = "2"
+                        />
+            <Button Text="Entrar" Command="{Binding NavigateToEstados}"  />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:mexico"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    x:Class="mexico.Views.Mapa">
+
+    <ContentPage.Content>
+
+         <StackLayout>
+        <maps:Map x:Name="MapView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <StackLayout Spacing="15" Padding="20" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+            <Button HorizontalOptions="EndAndExpand" VerticalOptions="Center" HeightRequest="50" Text="Mapa" Clicked="Street_OnClicked" />
+            <Button HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" Text="Híbrida" Clicked="Hybrid_OnClicked" />
+            <Button HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="50" Text="Satélite" Clicked="Satellite_OnClicked" />
+         </StackLayout>
+         <Button HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="50" Text="Regresar" Command="{Binding NavigateToEstados}" />
+
+    </StackLayout>
+
+        
+    </ContentPage.Content>
+</ContentPage>
