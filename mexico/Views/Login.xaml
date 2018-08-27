@@ -23,7 +23,7 @@
                             Image="user" 
                             Placeholder="Usuario" 
                             LineColor = "#F7CC8B"
-                            BorderSize = "2"
+                            BorderSize = "4"
                         />
                         <Controls:CustomEntry 
                             Image="key" 

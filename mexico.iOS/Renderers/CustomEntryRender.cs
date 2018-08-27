@@ -44,8 +44,8 @@ namespace mexico.iOS.Renderers
             //         textField.BorderStyle = UITextBorderStyle.None;
             CALayer bottomBorder = new CALayer
             {
-                Frame = new CGRect(0.0f, 0.0f, this.Frame.Width-50, this.Frame.Height),
-                BorderWidth = 1.0f,
+                Frame = new CGRect(0.0f, 0.0f, this.Frame.Width-45, this.Frame.Height+10),
+                BorderWidth = (float) element.BorderSize,
                 BorderColor = element.LineColor.ToCGColor()
             };
 

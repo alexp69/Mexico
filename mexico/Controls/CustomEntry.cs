@@ -27,10 +27,10 @@ namespace mexico.Controls
 
         public static readonly BindableProperty ImageAlignmentProperty =
             BindableProperty.Create(nameof(ImageAlignment), typeof(ImageAlignment), typeof(CustomEntry), ImageAlignment.Left);
-
-        public Double BorderSize
+        
+        public int BorderSize
         {
-            get { return (Double)GetValue(BorderSizeProperty); }
+            get { return (int)GetValue(BorderSizeProperty); }
             set { SetValue(BorderSizeProperty, value); }
         }
 
